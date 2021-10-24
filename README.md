@@ -8,7 +8,7 @@
     <h2>Dogs that never bark</h2>
     <body>
         <img src="unsplash.com/photos/QV8xurqnXTs" alt="A dog with short fur coat is curled on a black blanket">
-        <a href="#footer">More info below</a>
+        <p><a href="#footer">More info below</a></p>
         <p>In fact, they do. Like most hounds, Basenjis are very vocal. How(l)ever, unlike with most dogs, one can hardly call it a bark. The unique noise they make can be best described as a yodel. </p>
         <p>These yodles have mesmerised people even in ancient Egypt, where the breed origitanes from. It may very vell be considered a form of art. Just listen to these <a href="https://youtu.be/HNqXYSeIrOY">majestic melodies</a></p>
         <img src="unsplash.com/photos/Jj48Cz5e0Eg" alt="a basenji dog staring at the window">
