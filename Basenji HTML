@@ -4,6 +4,15 @@
         <meta charset="utf-8">
         <title>Majestic Basenjis</title>
     </head>
+    <style>
+        html{
+            background-color: #F9AD61;
+        }
+        h1{
+            text-align: center;
+            color: #FCF9F7;
+        }
+    </style>
     <h1>Majestic Basenjis</h1>
     <h2>Dogs that never bark</h2>
     <body>
