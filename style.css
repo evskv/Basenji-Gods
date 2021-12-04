@@ -1,0 +1,47 @@
+<style>
+.item-a {
+    grid-area: header-1;
+  }
+  .item-b{
+      grid-area: header-2;
+  }
+  .item-c {
+      grid-area: header-3;
+  }
+  .item-d
+  {
+    grid-area: hero-1;
+  }
+  .item-e {
+      grid-area: hero-2;
+  }
+  .item-f{
+grid-area: ad;
+  }
+  .item-g {
+    grid-area: body-1;
+  }
+  .item-h{
+      grid-area: body-2;
+  }
+  .item-i {
+      grid-area: sidebar;
+  }
+  .item-j {
+    grid-area: footer;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 500px 250px 250px;
+    grid-template-rows: 200px 400px 200px; 
+    column-gap: 10px;
+    row-gap: 15px;
+    grid-template-areas: 
+    "header-1 header-2 header-3"
+    "hero-1 hero-2 ad"
+    "body-1 body-2 sidebar"
+    "footer footer footer";
+    justify-items: center;
+    align-items: center;
+  }
+</style>
