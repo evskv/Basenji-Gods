@@ -1,47 +1,64 @@
 <style>
-.item-a {
-    grid-area: header-1;
+.container {
+    display: grid; 
+    grid-template-columns: 450px 450px 300px; 
+    grid-template-rows: 100px 200px 400px 100px; 
+    gap: 4px 6px; 
+    grid-template-areas: 
+      "header-1 header-2 header-3"
+      "hero-1 hero-2 ad"
+      "body-1 body-2 sidebar"
+      "footer-1 footer-2 footer-3"; 
+    justify-content: space-around; 
+    justify-items: center; 
+  }
+  .item-a {
+      grid-area: header-1;
+      font-size: medium;
+      font-family: Helvetica;
+      background-color: #D79350
   }
   .item-b{
       grid-area: header-2;
+      font-size: large;
+      font-family: Helvetica;
+      font-style: italic;
+      background-color: #D79350;
+      border: 2px;
+      border-radius: 40px;
+
   }
   .item-c {
-      grid-area: header-3;
+      grid-area: header3;
+      font-size: smaller;
+      font-family: Helvetica;
+      background-color: #D79350;
   }
-  .item-d
-  {
+  .item-d {
     grid-area: hero-1;
-  }
-  .item-e {
-      grid-area: hero-2;
-  }
-  .item-f{
-grid-area: ad;
-  }
-  .item-g {
+}
+.item-e {
+    grid-area: hero-2
+}
+.item-f {
+    grid-area: ad;
+}
+.item-g {
     grid-area: body-1;
-  }
-  .item-h{
-      grid-area: body-2;
-  }
-  .item-i {
-      grid-area: sidebar;
-  }
-  .item-j {
-    grid-area: footer;
-  }
-  .container {
-    display: grid;
-    grid-template-columns: 500px 250px 250px;
-    grid-template-rows: 200px 400px 200px; 
-    column-gap: 10px;
-    row-gap: 15px;
-    grid-template-areas: 
-    "header-1 header-2 header-3"
-    "hero-1 hero-2 ad"
-    "body-1 body-2 sidebar"
-    "footer footer footer";
-    justify-items: center;
-    align-items: center;
-  }
-</style>
+}
+.item-h {
+    grid-area: body-2
+}
+.item-i {
+    grid-area: sidebar;
+}
+.item-j {
+    grid-area: footer-1;
+}
+.item-k {
+    grid-area: footer-2
+}
+.item-l {
+    grid-area: footer-3;
+}
+  </style>
