@@ -1,64 +1,88 @@
 <style>
 .container {
-    display: grid; 
-    grid-template-columns: 450px 450px 300px; 
-    grid-template-rows: 100px 200px 400px 100px; 
-    gap: 4px 6px; 
-    grid-template-areas: 
+    display: grid;
+    grid-template-columns: 450px 450px 300px;
+    grid-template-rows: 100px 200px 400px 100px;
+    gap: 5px 0px;
+    grid-auto-flow: row dense;
+    justify-content: space-around;
+    justify-items: stretch;
+    text-align:center;
+    background-color: rgba(252, 237, 221, 0.37);
+    grid-template-areas:
       "header-1 header-2 header-3"
       "hero-1 hero-2 ad"
       "body-1 body-2 sidebar"
-      "footer-1 footer-2 footer-3"; 
-    justify-content: space-around; 
-    justify-items: center; 
+      "footer-1 footer-2 footer-3";
   }
-  .item-a {
-      grid-area: header-1;
-      font-size: medium;
-      font-family: Helvetica;
-      background-color: #D79350
+  
+  .header-1 { grid-area: header-1; 
+  text-align: left;
+    font-size: 20px;
+    background-color: rgba(191, 127, 63, 0.37);
   }
-  .item-b{
-      grid-area: header-2;
-      font-size: large;
-      font-family: Helvetica;
-      font-style: italic;
-      background-color: #D79350;
-      border: 2px;
-      border-radius: 40px;
+  .header-3 { grid-area: header-3; 
+  background-color: rgba(191, 127, 63, 0.37);}
+  
+  .hero-1 { grid-area: hero-1; }
+  
+  .hero-2 { grid-area: hero-2; }
+  
+  .ad { grid-area: ad; }
+  
+  .body-1 { grid-area: body-1; }
+  
+  .body-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tale tale tale"
+      "tale tale tale"
+      ". . .";
+    grid-area: body-2;
+  }
+  
+  .tale { grid-area: tale; }
+  
+  .sidebar { grid-area: sidebar; }
+  
+  .footer-1 { grid-area: footer-1; }
+  
+  .footer-2 { grid-area: footer-2; }
+  
+  .footer-3 { grid-area: footer-3; }
+  
+  .header-2 { grid-area: header-2; 
+    font-size: 30px;
+  background-color: rgba(191, 127, 63, 0.37);
+  border: solid black;
+  border-radius: 40%}
+  
+  
+  html, body , .container {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* For presentation only, no need to copy the code below */
+  
+  .container * {
+    border: 1px solid black;
+    position: relative;
+  }
 
+  .container *:after {
+    content:attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
   }
-  .item-c {
-      grid-area: header3;
-      font-size: smaller;
-      font-family: Helvetica;
-      background-color: #D79350;
-  }
-  .item-d {
-    grid-area: hero-1;
-}
-.item-e {
-    grid-area: hero-2
-}
-.item-f {
-    grid-area: ad;
-}
-.item-g {
-    grid-area: body-1;
-}
-.item-h {
-    grid-area: body-2
-}
-.item-i {
-    grid-area: sidebar;
-}
-.item-j {
-    grid-area: footer-1;
-}
-.item-k {
-    grid-area: footer-2
-}
-.item-l {
-    grid-area: footer-3;
-}
   </style>
